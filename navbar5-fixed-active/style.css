@@ -7,7 +7,8 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
-    background: url(ai-generated-8898597.png) no-repeat center center/cover;
+    background-color: #0a0a0a;
+    background: url(pngtree-soft-pastel-floral-design-light-blue-background-image_16896113.jpg) no-repeat center center/cover;
 }
 
 .navbar {
@@ -18,7 +19,7 @@ body{
   width: 100%;
   position: sticky;
   top: 0;
-  background: transparent;
+   background: transparent; 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   z-index: 999;
@@ -49,7 +50,7 @@ body{
 
 .navbar-container .navbar-menu li a {
   text-decoration: none;
-  color: #fff;
+  color: #162530;
   font-size: 1.3rem;
   font-weight: 500;
   padding: 3px 20px;
@@ -64,6 +65,17 @@ body{
   background: rgba(188, 212, 229, 0.8);
   border: 2px solid #fff;
 }
+
+.navbar-container .navbar-menu li a.active {
+    color:#162530 ;
+    background: rgba(188, 212, 229, 0.8);
+}
+/* 
+.navbar-container .navbar-menu li a.active {
+    background: red !important; 
+} 
+*/
+
 
 .navbar-toggle {
   display: none;
