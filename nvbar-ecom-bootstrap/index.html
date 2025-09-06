@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stationary Mart</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      background-color: #d4edda; /* Light green */
+    }
+
+    .navbar-nav {
+      margin: 0 auto;
+    }
+
+    .navbar-nav .nav-item {
+      margin: 0 15px;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #155724 !important;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #0c4128 !important;
+    }
+
+    /* Categories toggle styling */
+    .dropdown-toggle {
+      background-color: #c3e6cb;
+      border-radius: 6px;
+      padding: 8px 16px !important;
+    }
+
+    .dropdown-toggle:hover {
+      background-color: #a8ddb5;
+    }
+
+    /* Profile dropdown */
+    .btn-group .dropdown-menu {
+      border: 1px solid #ccc;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-group .dropdown-item {
+      font-weight: 500;
+      color: #343a40;
+      transition: background 0.2s;
+    }
+
+    .btn-group .dropdown-item:hover {
+      background-color: #e2e6ea;
+    }
+
+    /* Rounded search bar */
+    input[type="search"] {
+      border-radius: 20px;
+      padding: 6px 12px;
+    }
+
+    .btn-outline-secondary {
+      border-radius: 20px;
+    }
+
+    /* Mega menu style */
+    .dropdown-menu {
+      background-color: #fff;
+      padding: 1rem;
+      border: 1px solid #dee2e6;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-menu h6 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+  <!-- Top bar -->
+  <div class="p-3 text-center bg-white border-bottom">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-left mb-3 mb-md-0">
+          <a href="#!">
+            <img src="https://via.placeholder.com/150x35?text=StationaryMart" height="35" alt="stationaryMart"/>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <form class="d-flex">
+            <input type="search" class="form-control" placeholder="Search" />
+            <button class="btn btn-outline-secondary ml-2" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="col-md-4 text-center text-md-right">
+          <a href="#" class="text-dark mr-3">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-danger">1</span>
+          </a>
+
+          <!-- Profile Dropdown -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="rounded-circle" height="30" />
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">My Profile</a>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+    <div class="container-fluid">
+      <a class="nav-link" href="#">Home</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+          <!-- Categories (Mega Menu) -->
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu w-100 mt-0 border-0" aria-labelledby="categoriesDropdown">
+              <div class="container py-4">
+                <div class="row">
+                  <!-- Column 1 -->
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase">Explicabo Voluptas</h6>
+                    <a href="#" class="text-dark">
+                      <div class="media mb-3">
+                        <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg" class="mr-3 img-fluid rounded" style="width: 60px;" alt="">
+                        <div class="media-body">
+                          <p class="mb-1"><strong>Lorem ipsum</strong></p>
+                          <small class="text-muted">15.07.2020</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Column 2 -->
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase">Iste Quaerato</h6>
+                    <a href="#" class="text-dark">
+                      <div class="media mb-3">
+                        <img src="https://mdbootstrap.com/img/new/standard/city/043.jpg" class="mr-3 img-fluid rounded" style="width: 60px;" alt="">
+                        <div class="media-body">
+                          <p class="mb-1"><strong>Lorem ipsum</strong></p>
+                          <small class="text-muted">15.07.2020</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Column 3 -->
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase">Cras Justo Odio</h6>
+                    <a href="#" class="text-dark">
+                      <div class="media mb-3">
+                        <img src="https://mdbootstrap.com/img/new/standard/city/045.jpg" class="mr-3 img-fluid rounded" style="width: 60px;" alt="">
+                        <div class="media-body">
+                          <p class="mb-1"><strong>Lorem ipsum</strong></p>
+                          <small class="text-muted">15.07.2020</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Other links -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
